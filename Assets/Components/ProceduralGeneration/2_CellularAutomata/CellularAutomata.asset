@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxSteps: 5
   _noiseDensity: 60
-  _NeighborThreshold: 6
+  _NeighborThreshold: 4
