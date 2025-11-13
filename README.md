@@ -104,7 +104,7 @@ ProceduralGridGenerator
 - Remplissage des zones vides → Grass  
 - Override : Rooms = true, Corridors = true
 
-## 2.BSP2 (BSP classique amélioré)
+## 2.BSP
 - Découpe récursive avec ratio  
 - Chaque leaf génère une Room  
 - Connexions hiérarchiques  
@@ -117,9 +117,9 @@ ProceduralGridGenerator
 - Très organique  
 - Coût élevé sur grandes grilles
 
-## 4.Noise (OpenSimplex Biomes)
-- Water → Sand → Grass → Rock  
-- FastNoiseLite (FBm)  
+## 4.Noise
+- Eau → Sable → herbe → rocher  
+- FastNoiseLite  
 - Très performant  
 
 ---
