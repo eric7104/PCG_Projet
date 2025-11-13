@@ -6,7 +6,6 @@
 ---
 
 # 📖 Table des matières
-1. [Introduction](#-introduction)
 2. [Fonctionnalités](#-fonctionnalités)
 3. [Architecture](#-architecture)
 4. [Système de Grille](#-système-de-grille)
@@ -21,20 +20,7 @@
 9. [Utilisation](#-utilisation)
 10. [Extensibilité](#-extensibilité)
 11. [Glossaire](#-glossaire)
-12. [Contribution](#-contribution)
-13. [Limitations](#-limitations)
-14. [Crédits](#-crédits)
-
----
-
-# ✨ Introduction
-Ce projet propose une **plateforme modulaire et extensible** pour générer des environnements procéduraux **sur grille** dans Unity.
-
-Les objectifs principaux :
-- Offrir plusieurs **algorithmes de génération interchangeables**
-- Assurer une **reproductibilité** via seeds
-- Fournir une architecture **simple à étendre**
-- Offrir un pipeline **asynchrone** pour éviter les blocages
+12. [Crédits](#-crédits)
 
 ---
 
@@ -143,17 +129,6 @@ ProceduralGridGenerator
 
 ---
 
-# 📊 Comparatif Rapide
-
-| Méthode | Style | Connexions | Override | Sol | Async |
-|--------|-------|------------|----------|------|--------|
-| SimpleRoomPlacement | Donjon simple | Linéaire | Oui | Oui | Oui |
-| BSP2 | Structuré | Hiérarchique | Oui (Rooms) | Non | Non |
-| Cellular Automata | Cavernes | N/A | Oui | Oui | Oui |
-| Noise | Biomes | N/A | Oui | N/A | Oui |
-
----
-
 # 🚀 Utilisation
 ```csharp
 var generator = FindObjectOfType<ProceduralGridGenerator>();
@@ -182,18 +157,6 @@ Paramétrer :
 - Tile : objet visuel issu d'un template  
 - BSP : Binary Space Partitioning  
 - FBm : Fractal Brownian Motion  
-
----
-
-# 🛠 Contribution
-- PR bienvenues  
-- Scènes de test appréciées  
-
----
-
-# 🔒 Limitations
-- BSP2 non async  
-- Surfaces énormes = coûts élevés  
 
 ---
 
