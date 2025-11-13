@@ -116,7 +116,6 @@ ProceduralGridGenerator
 ## 3. Cellular Automata
 - Initialisation eau/herbe  
 - Itérations avec règles de voisinage  
-- Très organique  
 - Coût élevé sur grandes grilles  
 
 <p align="center">
