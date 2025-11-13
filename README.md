@@ -164,4 +164,4 @@ Paramétrer :
 ---
 
 # Crédits
-- FastNoiseLite (OpenSimplex2)
+- FastNoiseLite 
