@@ -10,15 +10,13 @@
 4. [Gestion des Objets (Tiles)](#-gestion-des-objets-tiles)
 5. [Pipeline de Génération](#-pipeline-de-génération)
 6. [Méthodes de Génération](#-méthodes-de-génération)
-   - [SimpleRoomPlacement](#1️⃣-simpleroomplacement)
-   - [BSP2](#2️⃣-bsp2-bsp-classique-amélioré)
-   - [Cellular Automata](#3️⃣-cellular-automata)
-   - [Noise](#4️⃣-noise-opensimplex-biomes)
-7. [Comparatif](#-comparatif-rapide)
-8. [Utilisation](#-utilisation)
-9. [Extensibilité](#-extensibilité)
-10. [Glossaire](#-glossaire)
-11. [Crédits](#-crédits)
+   - [SimpleRoomPlacement](#1.simpleroomplacement)
+   - [BSP2](#2.bsp2-bsp-classique-amélioré)
+   - [Cellular Automata](#3.cellular-automata)
+   - [Noise](#4.noise-opensimplex-biomes)
+7. [Utilisation](#-utilisation)
+8. [Extensibilité](#-extensibilité)
+9. [Crédits](#-crédits)
 
 ---
 
