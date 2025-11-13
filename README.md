@@ -114,11 +114,16 @@ ProceduralGridGenerator
 - Itérations avec règles de voisinage  
 - Très organique  
 - Coût élevé sur grandes grilles
+![Aperçu général](./Docs/CompareCells.png)
+![Aperçu général](./Docs/CellularAutomata.png)
 
 ## 4.Noise
 - Eau → Sable → herbe → rocher  
 - FastNoiseLite  
-- Très performant  
+- Très performant
+![Aperçu général](./Docs/SetupNoise.png)
+![Aperçu général](./Docs/GenerationNoise.png)
+![Aperçu général](./Docs/inspecteurNoise.png)
 
 ---
 
@@ -133,6 +138,7 @@ Paramétrer :
 - seed
 - debug
 - step delay
+![Aperçu général](./Docs/InspecteurGridGen.png)
 
 ---
 
