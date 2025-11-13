@@ -1,8 +1,6 @@
 # 🧩 Génération Procédurale sur Grille — Unity
 *Framework modulaire pour donjons, biomes et cartes procédurales.*
 
-![Screenshot Placeholder](./Docs/screenshot_main.png)
-
 ---
 
 # 📖 Table des matières
@@ -53,9 +51,6 @@ ProceduralGridGenerator
 │
 └── GridObjectTemplate → GridObjectFactory → GridObjectController
 ```
-
-![Screenshot Placeholder](./Docs/screenshot_griddebug.png)
-
 ---
 
 # 🟦 Système de Grille
@@ -92,7 +87,7 @@ ProceduralGridGenerator
 
 ---
 
-# ⚙️ Pipeline de Génération
+# ⚙️ Sens de Génération
 1. Création de la grille  
 2. Exécution de la méthode procédurale  
 3. Placement des tiles  
@@ -105,7 +100,7 @@ ProceduralGridGenerator
 
 ## 1️⃣ SimpleRoomPlacement
 - Placement de salles rectangulaires non chevauchées  
-- Couloirs en L  
+- Reliage de Couloirs   
 - Remplissage des zones vides → Grass  
 - Override : Rooms = true, Corridors = true
 
@@ -148,15 +143,6 @@ Paramétrer :
 2. Utiliser `RandomService`
 3. Utiliser `AddGridObjectToCell`
 4. Gérer `cancellationToken`
-
----
-
-# 📚 Glossaire
-- Room : zone rectangulaire  
-- Corridor : couloir en L  
-- Tile : objet visuel issu d'un template  
-- BSP : Binary Space Partitioning  
-- FBm : Fractal Brownian Motion  
 
 ---
 
