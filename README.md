@@ -138,6 +138,7 @@ Paramétrer :
 - seed
 - debug
 - step delay
+
 ![Aperçu général](./Docs/InspcteurGridGen.png)
 
 ---
