@@ -1,6 +1,6 @@
 # Génération Procédurale sur Unity
 *Projet génération procedural Gaming Campus*
-
+![Aperçu général](./Docs/rendu.png)
 ---
 
 # Table des matières
