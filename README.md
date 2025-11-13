@@ -1,6 +1,10 @@
 # Génération Procédurale sur Unity
 *Projet génération procedural Gaming Campus*
-![Aperçu général](./Docs/rendu.png)
+
+<p align="center">
+  <img src="./Docs/rendu.png" width="800">
+</p>
+
 ---
 
 # Table des matières
@@ -10,10 +14,10 @@
 4. [Gestion des Objets (Tiles)](#-gestion-des-objets-tiles)
 5. [Pipeline de Génération](#-pipeline-de-génération)
 6. [Méthodes de Génération](#-méthodes-de-génération)
-   - [SimpleRoomPlacement](#1.simpleroomplacement)
-   - [BSP2](#2.bsp2-bsp-classique-amélioré)
-   - [Cellular Automata](#3.cellular-automata)
-   - [Noise](#4.noise-opensimplex-biomes)
+   - [SimpleRoomPlacement](#1-simpleroomplacement)
+   - [BSP2](#2-bsp2-bsp-classique-amélioré)
+   - [Cellular Automata](#3-cellular-automata)
+   - [Noise](#4-noise-opensimplex-biomes)
 7. [Utilisation](#-utilisation)
 8. [Extensibilité](#-extensibilité)
 9. [Crédits](#-crédits)
@@ -77,7 +81,7 @@ ProceduralGridGenerator
 - Prefab Unity utilisé comme vue
 
 ## GridObjectFactory
-- `SpawnOnGridFrom(template, cell)`  
+- `SpawnOnGridFrom(template, cell)`
 - Gestion complète de l’override
 
 ## GridObjectController
@@ -96,34 +100,40 @@ ProceduralGridGenerator
 
 # Méthodes de Génération
 
-## 1.SimpleRoomPlacement
+## 1. SimpleRoomPlacement
 - Placement de salles rectangulaires non chevauchées  
 - Reliage de Couloirs   
 - Remplissage des zones vides → Grass  
 - Override : Rooms = true, Corridors = true
 
-## 2.BSP
+## 2. BSP2
 - Découpe récursive avec ratio  
 - Chaque leaf génère une Room  
 - Connexions hiérarchiques  
 - Override sélectif  
 - Non async
 
-## 3.Cellular Automata
+## 3. Cellular Automata
 - Initialisation eau/herbe  
 - Itérations avec règles de voisinage  
 - Très organique  
-- Coût élevé sur grandes grilles
-![Aperçu général](./Docs/CompareCells.png)
-![Aperçu général](./Docs/CellularAutomata.png)
+- Coût élevé sur grandes grilles  
 
-## 4.Noise
-- Eau → Sable → herbe → rocher  
+<p align="center">
+  <img src="./Docs/CompareCells.png" width="420">
+  <img src="./Docs/CellularAutomata.png" width="420">
+</p>
+
+## 4. Noise
+- Eau → Sable → Herbe → Rocher  
 - FastNoiseLite  
-- Très performant
-![Aperçu général](./Docs/SetupNoise.png)
-![Aperçu général](./Docs/GenerationNoise.png)
-![Aperçu général](./Docs/inspecteurNoise.png)
+- Très performant  
+
+<p align="center">
+  <img src="./Docs/SetupNoise.png" width="300">
+  <img src="./Docs/GenerationNoise.png" width="300">
+  <img src="./Docs/inspecteurNoise.png" width="300">
+</p>
 
 ---
 
@@ -139,7 +149,9 @@ Paramétrer :
 - debug
 - step delay
 
-![Aperçu général](./Docs/InspcteurGridGen.png)
+<p align="center">
+  <img src="./Docs/InspcteurGridGen.png" width="600">
+</p>
 
 ---
 
