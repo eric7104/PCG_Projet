@@ -1,24 +1,24 @@
 # 🧩 Génération Procédurale sur Grille — Unity
-*Framework modulaire pour donjons, biomes et cartes procédurales.*
+*Projet génération procedural Gaming Campus*
 
 ---
 
 # 📖 Table des matières
-2. [Fonctionnalités](#-fonctionnalités)
-3. [Architecture](#-architecture)
-4. [Système de Grille](#-système-de-grille)
-5. [Gestion des Objets (Tiles)](#-gestion-des-objets-tiles)
-6. [Pipeline de Génération](#-pipeline-de-génération)
-7. [Méthodes de Génération](#-méthodes-de-génération)
+1. [Fonctionnalités](#-fonctionnalités)
+2. [Architecture](#-architecture)
+3. [Système de Grille](#-système-de-grille)
+4. [Gestion des Objets (Tiles)](#-gestion-des-objets-tiles)
+5. [Pipeline de Génération](#-pipeline-de-génération)
+6. [Méthodes de Génération](#-méthodes-de-génération)
    - [SimpleRoomPlacement](#1️⃣-simpleroomplacement)
    - [BSP2](#2️⃣-bsp2-bsp-classique-amélioré)
    - [Cellular Automata](#3️⃣-cellular-automata)
    - [Noise](#4️⃣-noise-opensimplex-biomes)
-8. [Comparatif](#-comparatif-rapide)
-9. [Utilisation](#-utilisation)
-10. [Extensibilité](#-extensibilité)
-11. [Glossaire](#-glossaire)
-12. [Crédits](#-crédits)
+7. [Comparatif](#-comparatif-rapide)
+8. [Utilisation](#-utilisation)
+9. [Extensibilité](#-extensibilité)
+10. [Glossaire](#-glossaire)
+11. [Crédits](#-crédits)
 
 ---
 
