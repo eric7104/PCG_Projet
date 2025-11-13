@@ -1,9 +1,9 @@
-# 🧩 Génération Procédurale sur Grille — Unity
+# Génération Procédurale sur Unity
 *Projet génération procedural Gaming Campus*
 
 ---
 
-# 📖 Table des matières
+# Table des matières
 1. [Fonctionnalités](#-fonctionnalités)
 2. [Architecture](#-architecture)
 3. [Système de Grille](#-système-de-grille)
@@ -22,7 +22,7 @@
 
 ---
 
-# 🎯 Fonctionnalités
+# Fonctionnalités
 - Grille centrée (Grid + Cell)
 - Placement intelligent d’objets via Template → Factory → Controller
 - Génération **asynchrone** (UniTask + cancellation)
@@ -37,7 +37,7 @@
 
 ---
 
-# 🏛️ Architecture
+# Architecture
 ```
 ProceduralGridGenerator
 │
@@ -53,7 +53,7 @@ ProceduralGridGenerator
 ```
 ---
 
-# 🟦 Système de Grille
+# Système de Grille
 
 ## Grid
 - `Width`, `Lenght` (typo volontaire), `CellSize`
@@ -72,7 +72,7 @@ ProceduralGridGenerator
 
 ---
 
-# 🧱 Gestion des Objets (Tiles)
+# Gestion des Objets (Tiles)
 
 ## GridObjectTemplate
 - Nom logique (ex : Grass, Room, Water)
@@ -87,7 +87,7 @@ ProceduralGridGenerator
 
 ---
 
-# ⚙️ Sens de Génération
+# Sens de Génération
 1. Création de la grille  
 2. Exécution de la méthode procédurale  
 3. Placement des tiles  
@@ -96,35 +96,35 @@ ProceduralGridGenerator
 
 ---
 
-# 🧠 Méthodes de Génération
+# Méthodes de Génération
 
-## 1️⃣ SimpleRoomPlacement
+## 1.SimpleRoomPlacement
 - Placement de salles rectangulaires non chevauchées  
 - Reliage de Couloirs   
 - Remplissage des zones vides → Grass  
 - Override : Rooms = true, Corridors = true
 
-## 2️⃣ BSP2 (BSP classique amélioré)
+## 2.BSP2 (BSP classique amélioré)
 - Découpe récursive avec ratio  
 - Chaque leaf génère une Room  
 - Connexions hiérarchiques  
 - Override sélectif  
 - Non async
 
-## 3️⃣ Cellular Automata
+## 3.Cellular Automata
 - Initialisation eau/herbe  
 - Itérations avec règles de voisinage  
 - Très organique  
 - Coût élevé sur grandes grilles
 
-## 4️⃣ Noise (OpenSimplex Biomes)
+## 4.Noise (OpenSimplex Biomes)
 - Water → Sand → Grass → Rock  
 - FastNoiseLite (FBm)  
 - Très performant  
 
 ---
 
-# 🚀 Utilisation
+# Utilisation
 ```csharp
 var generator = FindObjectOfType<ProceduralGridGenerator>();
 await generator.GenerateGrid();
@@ -138,7 +138,7 @@ Paramétrer :
 
 ---
 
-# 🔧 Extensibilité
+# Extensibilité
 1. Créer un ScriptableObject dérivé de `ProceduralGenerationMethod`
 2. Utiliser `RandomService`
 3. Utiliser `AddGridObjectToCell`
@@ -146,5 +146,5 @@ Paramétrer :
 
 ---
 
-# 📜 Crédits
+# Crédits
 - FastNoiseLite (OpenSimplex2)
