@@ -106,7 +106,7 @@ ProceduralGridGenerator
 - Remplissage des zones vides → Grass  
 - Override : Rooms = true, Corridors = true
 
-## 2. BSP2
+## 2. BSP
 - Découpe récursive avec ratio  
 - Chaque leaf génère une Room  
 - Connexions hiérarchiques  
